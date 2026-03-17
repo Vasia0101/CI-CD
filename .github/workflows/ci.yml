@@ -20,7 +20,7 @@ jobs:
     - name: Install tools
       run: pip install pytest ruff
     
-    - name: Run ALL Unit Tests (required to pass)
+    - name: Run ALL Unit Tests
       run: pytest tests/ -v
     
     - name: Run Ruff
