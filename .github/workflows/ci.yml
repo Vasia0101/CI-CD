@@ -19,7 +19,7 @@ jobs:
       run: pip install pytest
 
     - name: Run Unit Tests
-      run: pytest tests/ -v
+      run: pytest src/ -v
 
     - name: Run Ruff
       uses: astral-sh/ruff-action@v1
