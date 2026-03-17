@@ -1,4 +1,4 @@
-name: PR Checks
+name: PR Checks1
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
 jobs:
   quality-check:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v4
 
@@ -19,7 +19,8 @@ jobs:
       run: pip install pytest
 
     - name: Run Unit Tests
-      run: pytest tests/ -v
+      run: pytest src/ -v
 
     - name: Run Ruff
       uses: astral-sh/ruff-action@v1
+
